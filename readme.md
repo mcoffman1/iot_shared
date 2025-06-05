@@ -24,7 +24,7 @@ We welcome contributions from students, alumni, and collaborators. To keep the r
   - Optionally include a short `README.md` inside the folder to explain contents.
 - Direct commits or pull requests are both welcome, depending on your workflow.
 
-If you're unsure where something belongs, consider creating a thread or asking in the connected community (e.g., Discord, group chat, etc.).
+If you're unsure where something belongs, consider creating a thread or asking in the connected community (e.g., [Google Colab](https://discord.com/channels/1370083420763324627/1370086007990390786), group chat, etc.).
 
 ---
 
