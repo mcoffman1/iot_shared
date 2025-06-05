@@ -11,9 +11,7 @@ Step-by-step guide to implementing **MQTT** communication on **Siemens** devices
 4. Check your email to confirm the registration.
 5. Log in to the portal using your new account.
 
-<p align="center">
-  <img height="300" src="/IMAGES/0.png" />
-</p>
+![Siemens MQTT Image 0](https://raw.githubusercontent.com/mcoffman1/iot_shared/main/MQTT/SIEMENS/IMAGES/0.png)
 ---
 
 ## Part 2: Download the communication library
