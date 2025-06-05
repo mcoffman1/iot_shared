@@ -11,7 +11,7 @@ Step-by-step guide to implementing **MQTT** communication on **Siemens** devices
 5.  Log in to the portal using your new account.
 
 <div align="center">
-  <img src="IMAGES/0.jpg" >
+  <img src="IMAGES/0.png" >
 </div>
 
 ---
@@ -28,10 +28,10 @@ Step-by-step guide to implementing **MQTT** communication on **Siemens** devices
 6.  Download and unzip the archive on your computer.
 
 <div align="center">
-  <img src="IMAGES/1.jpg" >
+  <img src="IMAGES/1.png" >
 </div>
 <div align="center">
-  <img src="IMAGES/2.jpg" >
+  <img src="IMAGES/2.png" >
 </div>
 
 ---
@@ -46,16 +46,16 @@ Step-by-step guide to implementing **MQTT** communication on **Siemens** devices
 6.  From there, you can drag and drop function blocks, data types, and other components into your project.
 
 <div align="center">
-  <img src="IMAGES/3.jpg" >
+  <img src="IMAGES/3.png" >
 </div>
 <div align="center">
-  <img src="IMAGES/4.jpg" >
+  <img src="IMAGES/4.png" >
 </div>
 <div align="center">
-  <img src="IMAGES/5.jpg" >
+  <img src="IMAGES/5.png" >
 </div>
 <div align="center">
-  <img src="IMAGES/6.jpg" >
+  <img src="IMAGES/6.png" >
 </div>
 
 ---
@@ -71,10 +71,10 @@ Step-by-step guide to implementing **MQTT** communication on **Siemens** devices
 5.  Accept the default name: `LMQTT_Client_DB`.
 
 <div align="center">
-  <img src="IMAGES/7.jpg" >
+  <img src="IMAGES/7.png" >
 </div>
 <div align="center">
-  <img src="IMAGES/8.jpg" >
+  <img src="IMAGES/8.png" >
 </div>
 
 ---
@@ -86,7 +86,7 @@ Step-by-step guide to implementing **MQTT** communication on **Siemens** devices
 3.  Name it as desired (e.g., Data\_block\_MQTT).
 
 <div align="center">
-  <img src="IMAGES/9.jpg" >
+  <img src="IMAGES/9.png" >
 </div>
 
 ---
@@ -209,7 +209,7 @@ FULL TAGS:
 </div>
 
 <div align="center">
-  <img src="IMAGES/10.jpg" >
+  <img src="IMAGES/10.png" >
 </div>
 
 ---
@@ -227,7 +227,7 @@ mqttTopic=test ( feel free to use other topic)
 ### e) Now, on connParam, set up the ip and the port of our broker
 
 <div align="center">
-  <img src="IMAGES/11.jpg" >
+  <img src="IMAGES/11.png" >
 </div>
 
 ---
@@ -239,10 +239,10 @@ mqttTopic=test ( feel free to use other topic)
 3.  Ensure proper assignment:
 
 <div align="center">
-  <img src="IMAGES/12.jpg" >
+  <img src="IMAGES/12.png" >
 </div>
 <div align="center">
-  <img src="IMAGES/13.jpg" >
+  <img src="IMAGES/13.png" >
 </div>
 
 #### **Recommendation**
@@ -254,19 +254,19 @@ For detailed information about each parameter's behavior, refer to the official 
 ## Part 6: Create a Watch and Force tables
 
 <div align="center">
-  <img src="IMAGES/14.jpg" >
+  <img src="IMAGES/14.png" >
 </div>
 
 Add the following variables into the Watch table
 
 <div align="center">
-  <img src="IMAGES/15.jpg" >
+  <img src="IMAGES/15.png" >
 </div>
 
 Download and lets test, and monitor all in the watch table
 
 <div align="center">
-  <img src="IMAGES/16.jpg" >
+  <img src="IMAGES/16.png" >
 </div>
 
 In “publishMsgPayload”, you can choose the type of variable you want to send. For this example, leave it set to HEX. We’ll publish the character “A”, which corresponds to 16#41, so replace 16#00 with 16#41.
@@ -275,19 +275,19 @@ Make sure the mqttTopic is set to 'test'. Then, click Modify, and set the values
 Now check the subscriber to see if it received the message.
 
 <div align="center">
-  <img src="IMAGES/17.jpg" >
+  <img src="IMAGES/17.png" >
 </div>
 
 To receive data, just publish the desired information externally, like this:
 
 <div align="center">
-  <img src="IMAGES/18.jpg" >
+  <img src="IMAGES/18.png" >
 </div>
 
 Check the receivedMsgPayload in the Watch table. The value should change from 16#00 to 16#42, which corresponds to the character B.
 
 <div align="center">
-  <img src="IMAGES/19.jpg" >
+  <img src="IMAGES/19.png" >
 </div>
 
 ---
