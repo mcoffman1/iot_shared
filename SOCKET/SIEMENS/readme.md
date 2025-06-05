@@ -1,5 +1,3 @@
-https://github.com/mcoffman1/iot_shared/blob/main/SOCKET/SIEMENS/IMAGES/
-
 # SIEMENS SOCKET
 Step-by-step guide to implementing **SOCKET** communication on **Siemens** devices using **TIA Portal** and the `LCom` library.
 
