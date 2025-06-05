@@ -1,0 +1,19 @@
+def ur_server():
+    server_socket = socket_open("0.0.0.0", 1025)
+    sleep(0.5)  # Allow time for client to connect
+
+    # Accept a single client connection (blocking)
+    socket_set_var("server_socket", server_socket)
+
+    # Send greeting to client
+    socket_send_string("Hello Client")
+    textmsg("Sent: Hello Client")
+
+    # Read reply from client
+    client_reply = socket_read_string()
+    textmsg("Received from client: ", client_reply)
+
+    socket_close()
+end
+
+ur_server()

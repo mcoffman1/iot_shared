@@ -1,0 +1,16 @@
+def ur_client():
+    server_socket = socket_open("ip.of.the.server", 1025)
+    sleep(0.5)  # Allow connection to establish
+
+    # Read greeting from server
+    server_msg = socket_read_string()
+    textmsg("Received from server: ", server_msg)
+
+    # Send reply
+    socket_send_string("42")
+    textmsg("Sent: 42")
+
+    socket_close()
+end
+
+ur_client()
