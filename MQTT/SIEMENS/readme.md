@@ -26,12 +26,8 @@ Step-by-step guide to implementing **MQTT** communication on **Siemens** devices
 5. Accept the license terms if prompted.
 6. Download and unzip the archive on your computer.
 
-<p align="center">
-  <img height="300" src="/IMAGES/1.png" />
-</p>
-<p align="center">
-  <img height="300" src="/IMAGES/2.png" />
-</p>
+![Siemens MQTT Image 0](https://raw.githubusercontent.com/mcoffman1/iot_shared/main/MQTT/SIEMENS/IMAGES/1.png)
+![Siemens MQTT Image 0](https://raw.githubusercontent.com/mcoffman1/iot_shared/main/MQTT/SIEMENS/IMAGES/2.png)
 ---
 
 ## Part 3: Import the library into TIA Portal
@@ -43,18 +39,10 @@ Step-by-step guide to implementing **MQTT** communication on **Siemens** devices
 5. The library will open as a **Global Library**.
 6. From there, you can drag and drop function blocks, data types, and other components into your project.
 
-<p align="center">
-  <img height="300" src="/IMAGES/3.png" />
-</p>
-<p align="center">
-  <img height="300" src="/IMAGES/4.png" />
-</p>
-<p align="center">
-  <img height="300" src="/IMAGES/5.png" />
-</p>
-<p align="center">
-  <img height="300" src="/IMAGES/6.png" />
-</p>
+![Siemens MQTT Image 0](https://raw.githubusercontent.com/mcoffman1/iot_shared/main/MQTT/SIEMENS/IMAGES/3.png)
+![Siemens MQTT Image 0](https://raw.githubusercontent.com/mcoffman1/iot_shared/main/MQTT/SIEMENS/IMAGES/4.png)
+![Siemens MQTT Image 0](https://raw.githubusercontent.com/mcoffman1/iot_shared/main/MQTT/SIEMENS/IMAGES/5.png)
+![Siemens MQTT Image 0](https://raw.githubusercontent.com/mcoffman1/iot_shared/main/MQTT/SIEMENS/IMAGES/6.png)
 ---
 
 ## Part 4: Set-Up **LMQTT_Client FB**
@@ -67,12 +55,8 @@ Step-by-step guide to implementing **MQTT** communication on **Siemens** devices
 4. When prompted, create an associated Data Block for the FB.
 5. Accept the default name: `LMQTT_Client_DB`.
 
-<p align="center">
-  <img height="300" src="/IMAGES/7.png" />
-</p>
-<p align="center">
-  <img height="300" src="/IMAGES/8.png" />
-</p>
+![Siemens MQTT Image 0](https://raw.githubusercontent.com/mcoffman1/iot_shared/main/MQTT/SIEMENS/IMAGES/7.png)
+![Siemens MQTT Image 0](https://raw.githubusercontent.com/mcoffman1/iot_shared/main/MQTT/SIEMENS/IMAGES/8.png)
 ---
 
 ### b) Create a New Data Block for Parameters
@@ -81,9 +65,7 @@ Step-by-step guide to implementing **MQTT** communication on **Siemens** devices
 2. Choose **Data Block**.
 3. Name it as desired (e.g., Data_block_MQTT).
 
-<p align="center">
-  <img height="300" src="/IMAGES/9.png" />
-</p>
+![Siemens MQTT Image 0](https://raw.githubusercontent.com/mcoffman1/iot_shared/main/MQTT/SIEMENS/IMAGES/9.png)
 ---
 
 ### c) Open the Data Block and add the following variables:
@@ -118,9 +100,7 @@ FULL TAGS:
 | receivedMsgStatus    | USInt                    |
 | receivedMsgDataLen   | UDint                    |
 
-<p align="center">
-  <img height="300" src="/IMAGES/10.png" />
-</p>
+![Siemens MQTT Image 0](https://raw.githubusercontent.com/mcoffman1/iot_shared/main/MQTT/SIEMENS/IMAGES/10.png)
 ---
 
 ### d) Set up the variables values as:
@@ -135,9 +115,7 @@ mqttTopic=test ( feel free to use other topic)
 
 ### e) Now, on connParam, set up the ip and the port of our broker
 
-<p align="center">
-  <img height="300" src="/IMAGES/11.png" />
-</p>
+![Siemens MQTT Image 0](https://raw.githubusercontent.com/mcoffman1/iot_shared/main/MQTT/SIEMENS/IMAGES/11.png)
 ---
 
 ## Part 5: Link the Variables to the FB
@@ -145,12 +123,8 @@ mqttTopic=test ( feel free to use other topic)
 2. Connect each FB parameter to the corresponding variable in the `Block_IoT_MQTT`.
 3. Ensure proper assignment:
 
-<p align="center">
-  <img height="300" src="/IMAGES/12.png" />
-</p>
-<p align="center">
-  <img height="300" src="/IMAGES/13.png" />
-</p>
+![Siemens MQTT Image 0](https://raw.githubusercontent.com/mcoffman1/iot_shared/main/MQTT/SIEMENS/IMAGES/12.png)
+![Siemens MQTT Image 0](https://raw.githubusercontent.com/mcoffman1/iot_shared/main/MQTT/SIEMENS/IMAGES/13.png)
 
 #### **Recommendation**
 
@@ -159,40 +133,28 @@ For detailed information about each parameter's behavior, refer to the official 
 
 ## Part 6: Create a Watch and Force tables
 
-<p align="center">
-  <img height="300" src="/IMAGES/14.png" />
-</p>
+![Siemens MQTT Image 0](https://raw.githubusercontent.com/mcoffman1/iot_shared/main/MQTT/SIEMENS/IMAGES/14.png)
 
 Add the following variables into the Watch table
 
-<p align="center">
-  <img height="300" src="/IMAGES/15.png" />
-</p>
+![Siemens MQTT Image 0](https://raw.githubusercontent.com/mcoffman1/iot_shared/main/MQTT/SIEMENS/IMAGES/15.png)
 
 Download and lets test, and monitor all in the watch table
 
-<p align="center">
-  <img height="300" src="/IMAGES/16.png" />
-</p>
+![Siemens MQTT Image 0](https://raw.githubusercontent.com/mcoffman1/iot_shared/main/MQTT/SIEMENS/IMAGES/16.png)
 
 In “publishMsgPayload”, you can choose the type of variable you want to send. For this example, leave it set to HEX. We’ll publish the character “A”, which corresponds to 16#41, so replace 16#00 with 16#41.
 Make sure the mqttTopic is set to 'test'. Then, click Modify, and set the values to 1 or True for “enable: and “publish”.
 
 Now check the subscriber to see if it received the message.
 
-<p align="center">
-  <img height="300" src="/IMAGES/17.png" />
-</p>
+![Siemens MQTT Image 0](https://raw.githubusercontent.com/mcoffman1/iot_shared/main/MQTT/SIEMENS/IMAGES/17.png)
 
 To receive data, just publish the desired information externally, like this:
 
-<p align="center">
-  <img height="300" src="/IMAGES/18.png" />
-</p>
+![Siemens MQTT Image 0](https://raw.githubusercontent.com/mcoffman1/iot_shared/main/MQTT/SIEMENS/IMAGES/18.png)
 
 Check the receivedMsgPayload in the Watch table. The value should change from 16#00 to 16#42, which corresponds to the character B.
 
-<p align="center">
-  <img height="300" src="/IMAGES/19.png" />
-</p>
+![Siemens MQTT Image 0](https://raw.githubusercontent.com/mcoffman1/iot_shared/main/MQTT/SIEMENS/IMAGES/19.png)
 ---
