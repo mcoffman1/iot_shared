@@ -12,7 +12,7 @@ Step-by-step guide to implementing **MQTT** communication on **Siemens** devices
 5. Log in to the portal using your new account.
 
 <p align="center">
-  <img height="300" src="MQTT/SIEMENS/IMAGES/0.png" />
+  <img height="300" src="/IMAGES/0.png" />
 </p>
 ---
 
@@ -29,10 +29,10 @@ Step-by-step guide to implementing **MQTT** communication on **Siemens** devices
 6. Download and unzip the archive on your computer.
 
 <p align="center">
-  <img height="300" src="MQTT/SIEMENS/IMAGES/1.png" />
+  <img height="300" src="/IMAGES/1.png" />
 </p>
 <p align="center">
-  <img height="300" src="MQTT/SIEMENS/IMAGES/2.png" />
+  <img height="300" src="/IMAGES/2.png" />
 </p>
 ---
 
@@ -46,16 +46,16 @@ Step-by-step guide to implementing **MQTT** communication on **Siemens** devices
 6. From there, you can drag and drop function blocks, data types, and other components into your project.
 
 <p align="center">
-  <img height="300" src="MQTT/SIEMENS/IMAGES/3.png" />
+  <img height="300" src="/IMAGES/3.png" />
 </p>
 <p align="center">
-  <img height="300" src="MQTT/SIEMENS/IMAGES/4.png" />
+  <img height="300" src="/IMAGES/4.png" />
 </p>
 <p align="center">
-  <img height="300" src="MQTT/SIEMENS/IMAGES/5.png" />
+  <img height="300" src="/IMAGES/5.png" />
 </p>
 <p align="center">
-  <img height="300" src="MQTT/SIEMENS/IMAGES/6.png" />
+  <img height="300" src="/IMAGES/6.png" />
 </p>
 ---
 
@@ -70,10 +70,10 @@ Step-by-step guide to implementing **MQTT** communication on **Siemens** devices
 5. Accept the default name: `LMQTT_Client_DB`.
 
 <p align="center">
-  <img height="300" src="MQTT/SIEMENS/IMAGES/7.png" />
+  <img height="300" src="/IMAGES/7.png" />
 </p>
 <p align="center">
-  <img height="300" src="MQTT/SIEMENS/IMAGES/8.png" />
+  <img height="300" src="/IMAGES/8.png" />
 </p>
 ---
 
@@ -84,7 +84,7 @@ Step-by-step guide to implementing **MQTT** communication on **Siemens** devices
 3. Name it as desired (e.g., Data_block_MQTT).
 
 <p align="center">
-  <img height="300" src="MQTT/SIEMENS/IMAGES/9.png" />
+  <img height="300" src="/IMAGES/9.png" />
 </p>
 ---
 
@@ -121,7 +121,7 @@ FULL TAGS:
 | receivedMsgDataLen   | UDint                    |
 
 <p align="center">
-  <img height="300" src="MQTT/SIEMENS/IMAGES/10.png" />
+  <img height="300" src="/IMAGES/10.png" />
 </p>
 ---
 
@@ -138,7 +138,7 @@ mqttTopic=test ( feel free to use other topic)
 ### e) Now, on connParam, set up the ip and the port of our broker
 
 <p align="center">
-  <img height="300" src="MQTT/SIEMENS/IMAGES/11.png" />
+  <img height="300" src="/IMAGES/11.png" />
 </p>
 ---
 
@@ -148,10 +148,10 @@ mqttTopic=test ( feel free to use other topic)
 3. Ensure proper assignment:
 
 <p align="center">
-  <img height="300" src="MQTT/SIEMENS/IMAGES/12.png" />
+  <img height="300" src="/IMAGES/12.png" />
 </p>
 <p align="center">
-  <img height="300" src="MQTT/SIEMENS/IMAGES/13.png" />
+  <img height="300" src="/IMAGES/13.png" />
 </p>
 
 #### **Recommendation**
@@ -162,19 +162,19 @@ For detailed information about each parameter's behavior, refer to the official 
 ## Part 6: Create a Watch and Force tables
 
 <p align="center">
-  <img height="300" src="MQTT/SIEMENS/IMAGES/14.png" />
+  <img height="300" src="/IMAGES/14.png" />
 </p>
 
 Add the following variables into the Watch table
 
 <p align="center">
-  <img height="300" src="MQTT/SIEMENS/IMAGES/15.png" />
+  <img height="300" src="/IMAGES/15.png" />
 </p>
 
 Download and lets test, and monitor all in the watch table
 
 <p align="center">
-  <img height="300" src="MQTT/SIEMENS/IMAGES/16.png" />
+  <img height="300" src="/IMAGES/16.png" />
 </p>
 
 In “publishMsgPayload”, you can choose the type of variable you want to send. For this example, leave it set to HEX. We’ll publish the character “A”, which corresponds to 16#41, so replace 16#00 with 16#41.
@@ -183,18 +183,18 @@ Make sure the mqttTopic is set to 'test'. Then, click Modify, and set the values
 Now check the subscriber to see if it received the message.
 
 <p align="center">
-  <img height="300" src="MQTT/SIEMENS/IMAGES/17.png" />
+  <img height="300" src="/IMAGES/17.png" />
 </p>
 
 To receive data, just publish the desired information externally, like this:
 
 <p align="center">
-  <img height="300" src="MQTT/SIEMENS/IMAGES/18.png" />
+  <img height="300" src="/IMAGES/18.png" />
 </p>
 
 Check the receivedMsgPayload in the Watch table. The value should change from 16#00 to 16#42, which corresponds to the character B.
 
 <p align="center">
-  <img height="300" src="MQTT/SIEMENS/IMAGES/19.png" />
+  <img height="300" src="/IMAGES/19.png" />
 </p>
 ---
