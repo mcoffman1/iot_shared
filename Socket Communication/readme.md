@@ -100,7 +100,6 @@ Use socket communication if:
 - You’re building a **custom protocol or message structure**
 - You need a **lightweight**, **real-time** connection
 - You're teaching or learning **how networking really works**
-- You’re working with **PLCs, robots, microcontrollers**, or simulation tools
 
 ---
 
