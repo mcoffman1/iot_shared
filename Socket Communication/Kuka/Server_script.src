@@ -1,0 +1,13 @@
+DEF SocketServer()
+  EKI_Init("EKI_Server")
+  EKI_Open("EKI_Server")
+  WAIT FOR EKI_CheckOpen("EKI_Server") == #READY
+  LOOP
+    IF EKI_CheckBuffer("EKI_Server") THEN
+      DECL CHAR Buffer[1024]
+      EKI_GetString("EKI_Server", "Buffer", Buffer[])
+      ; Handle received message
+    ENDIF
+  ENDLOOP
+  EKI_Close("EKI_Server")
+END

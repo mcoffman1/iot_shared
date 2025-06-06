@@ -1,0 +1,11 @@
+DEF SocketClient()
+  EKI_Init("EKI_Client")
+  EKI_Open("EKI_Client")
+  WAIT FOR EKI_CheckOpen("EKI_Client") == #READY
+
+  ; Send simple XML message
+  EKI_SetString("EKI_Client", "Buffer", "<Message>Hello from KUKA A</Message>")
+  EKI_Send("EKI_Client")
+
+  EKI_Close("EKI_Client")
+END
