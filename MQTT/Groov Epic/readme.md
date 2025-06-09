@@ -70,10 +70,6 @@ Click on "Open Node-RED Editor".
   <img src="IMAGES/6.png" >
 </div>
 
-<div align="center">
-  <img src="IMAGES/7.png" >
-</div>
-
 You are now inside the Node-RED editor, ready to build and configure MQTT flows on your groov EPIC.
 
 <div align="center">
@@ -96,7 +92,7 @@ Enter the Value: hello!
 Click Done.
 
 <div align="center">
-  <img src="IMAGES/8.png" >
+  <img src="IMAGES/7.png" >
 </div>
 
 ### Step 2: Add an MQTT Out Node
@@ -105,6 +101,10 @@ Under the "output" section, find the MQTT out node.
 Drag it next to the Inject node.
 
 Double-click the MQTT out node to configure it:
+
+<div align="center">
+  <img src="IMAGES/8.png" >
+</div>
 
 Click the pencil icon next to the Server field to add a new broker.
 
