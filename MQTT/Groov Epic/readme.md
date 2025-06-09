@@ -159,9 +159,6 @@ Click Done.
   <img src="IMAGES/13.png" >
 </div>
 
-<div align="center">
-  <img src="IMAGES/14.png" >
-</div>
 
 ### Step 4: Add a Debug Node
 Under the "output" section, find and drag a Debug node next to the MQTT in node.
@@ -173,10 +170,14 @@ Make sure the Output is set to: msg.payload
 Click Done.
 
 <div align="center">
-  <img src="IMAGES/15.png" >
+  <img src="IMAGES/14.png" >
 </div>
 
 Connect the MQTT in node to the Debug node.
+
+<div align="center">
+  <img src="IMAGES/15.png" >
+</div>
 
 ### Step 5: Deploy the Flow
 Click the red "Deploy" button in the upper-right corner to activate your flow.
