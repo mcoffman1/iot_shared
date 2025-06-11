@@ -1,4 +1,4 @@
-# 🤖 UR Robot ProfiNet Setup (with Siemens TIA Portal)
+# UR Robot ProfiNet Setup (with Siemens TIA Portal)
 
 This guide provides step-by-step instructions for setting up **ProfiNet communication between a Universal Robots (UR) robot and a Siemens PLC** using TIA Portal.
 
