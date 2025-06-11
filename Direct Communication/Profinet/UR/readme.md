@@ -18,7 +18,7 @@ ProfiNet allows efficient Ethernet-based I/O communication between devices like 
 ### 1. Configure Network
 
 - Open the **hamburger menu** on the UR teach pendant and go to **Settings > System > Network**
-
+-
 ![hamburger menu](pics/ur_hamburger_menu.png)
 
 - Open the system->network tab
