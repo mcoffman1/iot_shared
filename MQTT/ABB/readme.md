@@ -7,7 +7,7 @@ This guide explains:
 
 ---
 
-## 🔍 Part 1: Check for Required RobotWare Options
+## Part 1: Check for Required RobotWare Options
 
 To use MQTT natively, your controller must include these licensed options:
 
