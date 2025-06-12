@@ -1,4 +1,4 @@
-## 🤖 ABB Robot Socket Communication Notes
+## ABB Robot Socket Communication Notes
 
 - Communication can only occur on the robot’s private network (e.g., `192.168.125.1`) or WAN network.
 - **Best practice**: Use the **Service port** (LAN2) or WAN (LAN3) to avoid conflicts.
@@ -6,7 +6,7 @@
 
 ---
 
-## 🧠 ABB TCP Server Code Example
+## ABB TCP Server Code Example
 
 ```rapid
 ! Create a socket on port 1025
@@ -24,7 +24,7 @@ SocketSend connID, "Data received";
 
 ---
 
-## 🌐 ABB TCP Client Code Example
+## ABB TCP Client Code Example
 
 ```rapid
 ! Connect to server at 192.168.0.100 on port 1025
@@ -40,7 +40,7 @@ SocketReceive socketID, response;
 
 ---
 
-## 📦 Data Types in ABB Socket Communication
+## Data Types in ABB Socket Communication
 
 ABB supports multiple data formats over sockets:
 
@@ -75,7 +75,7 @@ SocketReceive connID, myByteArray;
 
 ---
 
-## 📝 Summary
+## Summary
 
 - ABB supports both TCP and UDP socket communication.
 - Use TCP for reliability and UDP for speed.
@@ -84,7 +84,7 @@ SocketReceive connID, myByteArray;
 
 ---
 
-## 📚 Additional Resources
+## Additional Resources
 
 - ABB RAPID Manual – Socket Messaging
 - ABB RobotStudio Communication Tutorials
