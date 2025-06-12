@@ -4,7 +4,7 @@ This guide sets up MQTT communication between **two Jetson AGX Orins** running *
 
 ---
 
-## 🔧 Requirements
+## Requirements
 
 * 2x Jetson AGX Orin devices
 * Ubuntu 20.04 on both
@@ -13,7 +13,7 @@ This guide sets up MQTT communication between **two Jetson AGX Orins** running *
 
 ---
 
-## ✅ Step 1: Install Mosquitto Broker & Clients
+## Step 1: Install Mosquitto Broker & Clients
 
 Run these commands on **both Jetsons**:
 
@@ -37,7 +37,7 @@ sudo systemctl status mosquitto
 
 ---
 
-## ✅ Step 2: Test Using Terminal
+## Step 2: Test Using Terminal
 
 **On Device A (Publisher):**
 
@@ -55,9 +55,9 @@ If working, you'll see `42` printed on Device B.
 
 ---
 
-## ✅ Step 3: Python MQTT Scripts
+## Step 3: Python MQTT Scripts
 
-### 📤 Publisher (Device A)
+### Publisher (Device A)
 
 Save as `publisher.py`
 
@@ -79,7 +79,7 @@ while True:
     time.sleep(1)
 ```
 
-### 📥 Subscriber (Device B)
+### Subscriber (Device B)
 
 Save as `subscriber.py`
 
@@ -99,7 +99,7 @@ client.subscribe(topic)
 client.loop_forever()
 ```
 
-### 🔧 Install Python MQTT Library
+### Install Python MQTT Library
 
 On **both Jetsons**:
 
@@ -109,7 +109,7 @@ pip3 install paho-mqtt
 
 ---
 
-## ✅ Step 4: Networking
+## Step 4: Networking
 
 Ensure:
 
@@ -122,7 +122,7 @@ sudo ufw allow 1883
 
 ---
 
-## ✅ Optional Debugging
+## Optional Debugging
 
 Use this to check port:
 
@@ -138,7 +138,7 @@ sudo systemctl restart mosquitto
 
 ---
 
-## ✅ Result
+## Result
 
 * `publisher.py` sends an increasing integer every second.
 * `subscriber.py` prints any value it receives.

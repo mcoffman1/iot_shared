@@ -5,7 +5,7 @@ This document explains how to establish socket communication using ABB robots as
 
 ---
 
-# 🔌 Understanding Socket Communication in Industrial Networking
+# Understanding Socket Communication in Industrial Networking
 
 ## What Is a Socket?
 
@@ -70,7 +70,7 @@ Communication occurs over **Ethernet** using:
 - Often used for real-time or streaming data.
 
 ---
-## 💬 What Gets Sent Through a Socket?
+## What Gets Sent Through a Socket?
 
 Sockets send **raw bytes**. You decide:
 - How to format messages
@@ -94,7 +94,7 @@ You can:
 
 ---
 
-## ✅ When Should You Use Sockets?
+## When Should You Use Sockets?
 
 Use socket communication if:
 - You’re building a **custom protocol or message structure**

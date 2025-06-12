@@ -32,7 +32,7 @@ Place the following XML files in:
 C:\KRC\Roboter\Config\User\Common\EthernetKRL\
 ```
 
-### ✅ KUKA B – Server Configuration (EKI_Server.xml)
+### KUKA B – Server Configuration (EKI_Server.xml)
 
 ```xml
 <EthernetKRL>
@@ -54,7 +54,7 @@ C:\KRC\Roboter\Config\User\Common\EthernetKRL\
 </EthernetKRL>
 ```
 
-### ✅ KUKA A – Client Configuration (EKI_Client.xml)
+### KUKA A – Client Configuration (EKI_Client.xml)
 
 ```xml
 <EthernetKRL>
@@ -81,7 +81,7 @@ C:\KRC\Roboter\Config\User\Common\EthernetKRL\
 
 ## 3. KRL Program Examples
 
-### 🟢 KUKA B – Server KRL Script
+### KUKA B – Server KRL Script
 
 ```krl
 DEF SocketServer()
@@ -99,7 +99,7 @@ DEF SocketServer()
 END
 ```
 
-### 🔵 KUKA A – Client KRL Script
+### KUKA A – Client KRL Script
 
 ```krl
 DEF SocketClient()
@@ -117,7 +117,7 @@ END
 
 ---
 
-## ⚠️ Notes
+## Notes
 
 - Use `ip.of.the.server` as a placeholder in XML. Replace it with the actual IP address.
 - Ensure EKI XML file names match in both code and filesystem.
@@ -126,4 +126,3 @@ END
 
 ---
 
-Happy robot networking! 🤝

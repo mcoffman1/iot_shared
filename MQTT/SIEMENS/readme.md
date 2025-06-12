@@ -4,7 +4,7 @@ Step-by-step guide to implementing **MQTT** communication on **Siemens** devices
 
 ## Part 1: Create a Siemens account
 
-1.  Go to: 👉 [https://support.industry.siemens.com](https://support.industry.siemens.com/)
+1.  Go to: [https://support.industry.siemens.com](https://support.industry.siemens.com/)
 2.  In the top-right corner, click **“Register”**.
 3.  Fill in your details (name, email, country, etc.).
 4.  Check your email to confirm the registration.
