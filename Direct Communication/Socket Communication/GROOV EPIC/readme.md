@@ -7,7 +7,7 @@
 Start by connecting your groov EPIC device to your local network. You can use either Wi-Fi or Ethernet, depending on your setup.
 
 <div align="center">
-  <img src="IMAGES/1.jpg" width="720" height="1279">
+  <img src="IMAGES/image1.jpeg" width="720" height="1279">
 </div>
 
 ### **Step 2: Find the IP Address**
@@ -15,11 +15,11 @@ Start by connecting your groov EPIC device to your local network. You can use ei
 Once connected, identify the IP address of your groov EPIC. In this example, the IP address is: 192.168.20.49
 
 <div align="center">
-  <img src="IMAGES/2.jpg" width="720" height="1279">
+  <img src="IMAGES/image2.jpeg" width="720" height="1279">
 </div>
 
 <div align="center">
-  <img src="IMAGES/3.jpg" width="720" height="1279">
+  <img src="IMAGES/image3.jpeg" width="720" height="1279">
 </div>
 
 This address allows you to access the device from your computer. Open a web browser and enter the IP address: [http://192.168.20.49](http://192.168.20.49/)
@@ -27,7 +27,7 @@ This address allows you to access the device from your computer. Open a web brow
 You will be directed to the login page of the groov EPIC interface.
 
 <div align="center">
-  <img src="IMAGES/4.png" >
+  <img src="IMAGES/image4.png" >
 </div>
 
 ### **Step 3: Log In to the groov EPIC Interface**
@@ -39,7 +39,7 @@ Use the following credentials to log in:
 | Password | changeme |
 
 <div align="center">
-  <img src="IMAGES/5.png" >
+  <img src="IMAGES/image5.png" >
 </div>
 
 ### **Step 4: View the Main Menu**
@@ -47,7 +47,7 @@ Use the following credentials to log in:
 After logging in, you will see the groov EPIC main system menu.
 
 <div align="center">
-  <img src="IMAGES/6.png" >
+  <img src="IMAGES/image6.png" >
 </div>
 
 ### **Step 5: Open Node-RED**
@@ -59,17 +59,17 @@ Select the Node-RED option.
 Click on "Open Node-RED Editor".
 
 <div align="center">
-  <img src="IMAGES/7.png" >
+  <img src="IMAGES/image7.png" >
 </div>
 
 <div align="center">
-  <img src="IMAGES/8.png" >
+  <img src="IMAGES/image8.png" >
 </div>
 
 You are now inside the Node-RED editor, ready to build and configure MQTT flows on your groov EPIC.
 
 <div align="center">
-  <img src="IMAGES/9.png" >
+  <img src="IMAGES/image9.png" >
 </div>
 
 ## Part 2: Building the TCP/IP Flow
@@ -88,7 +88,7 @@ Enter the Value: hello!
 Click Done.
 
 <div align="center">
-  <img src="IMAGES/10.png" >
+  <img src="IMAGES/image10.png" >
 </div>
 
 ### Step 2: Add a TCP Out Node
@@ -109,7 +109,7 @@ Output: stream of characters
 Click Done.
 
 <div align="center">
-  <img src="IMAGES/11.png" >
+  <img src="IMAGES/image11.png" >
 </div>
 
 Connect the Inject node to the TCP out node by dragging from the gray dot.
@@ -126,7 +126,7 @@ Port: 9000 (must match the TCP out node)
 Output: stream of String
 
 <div align="center">
-  <img src="IMAGES/12.png" >
+  <img src="IMAGES/image12.png" >
 </div>
 
 Click Done.
@@ -141,7 +141,7 @@ Ensure Output is set to: msg.payload
 Click Done.
 
 <div align="center">
-  <img src="IMAGES/13.png" >
+  <img src="IMAGES/image13.png" >
 </div>
 
 Connect the TCP in node to the Debug node.
@@ -151,11 +151,11 @@ Connect the TCP in node to the Debug node.
 Click the red Deploy button in the top-right corner to activate your flow.
 
 <div align="center">
-  <img src="IMAGES/14.png" >
+  <img src="IMAGES/image14.png" >
 </div>
 
 Run your Flow
 
 <div align="center">
-  <img src="IMAGES/15.png" >
+  <img src="IMAGES/image15.png" >
 </div>
