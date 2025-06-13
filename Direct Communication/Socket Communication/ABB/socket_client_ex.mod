@@ -6,18 +6,20 @@ MODULE RAPID_Client
   VAR num PORT := 1025;
 
   PROC SocketClientTest()
+    TPErase;
+
     ! 1. Create and connect to server
     SocketCreate client_socket;
     SocketConnect client_socket, IP_ADDRESS, PORT;
     TPWrite "Connected to server.";
 
-    ! 3. Send reply
-    SocketSend client_socket \Str:=reply;
-    TPWrite "Sent to server: " + reply;
-
     ! 2. Receive greeting
-    SocketReceive client_socket \Str:=received_message;
-    TPWrite "Received from server: " + received_message;
+    SocketSend client_socket \Str:=msg_to_send + ": " + client_ip;
+    TPWrite "Sent to client: " + msg_to_send + ": " + client_ip;
+
+    SocketReceive client_socket\Str:=client_msg;
+    TPWrite "Received from client: " + client_msg;
+
 
     ! 4. Clean up
     SocketClose client_socket;

@@ -9,6 +9,8 @@ MODULE RAPID_Server
   VAR num PORT := 1025;
 
   PROC SocketServerTest()
+    TPErase;
+
     ! 1. Create and bind server socket
     SocketCreate server_socket;
     SocketBind server_socket, IP_ADDRESS, PORT;
@@ -20,13 +22,11 @@ MODULE RAPID_Server
     SocketAccept server_socket, client_socket\ClientAddress:=client_ip;
     TPWrite "Client connected.";
 
-    WHILE NOT bLastMessage DO
-        SocketReceive client_socket\Str:=client_msg;
-        TPWrite "Received from client: " + client_msg;
-        
-        SocketSend client_socket \Str:=msg_to_send+": "+client_ip;
-        TPWrite "Sent to client: " + msg_to_send+": "+client_ip;
-    ENDWHILE
+    SocketReceive client_socket\Str:=client_msg;
+    TPWrite "Received from client: " + client_msg;
+    
+    SocketSend client_socket \Str:=msg_to_send+": "+client_ip;
+    TPWrite "Sent to client: " + msg_to_send+": "+client_ip;
 
     ! 5. Clean up
     SocketClose server_socket;
