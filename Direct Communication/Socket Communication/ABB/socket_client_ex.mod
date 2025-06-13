@@ -1,26 +1,26 @@
 MODULE RAPID_Client
-  VAR socketdev clientSock;
-  VAR string receivedData;
+  VAR socketdev client_socket;
+  VAR string received_message;
   VAR string reply := "42";
   VAR string IP_ADDRESS := "ip.of.the.server";
   VAR num PORT := 1025;
 
-  PROC main()
+  PROC SocketClientTest()
     ! 1. Create and connect to server
-    SocketCreate clientSock;
-    SocketConnect clientSock, IP_ADDRESS, PORT;
+    SocketCreate client_socket;
+    SocketConnect client_socket, IP_ADDRESS, PORT;
     TPWrite "Connected to server.";
 
-    ! 2. Receive greeting
-    SocketReceive clientSock, receivedData;
-    TPWrite "Received from server: " + receivedData;
-
     ! 3. Send reply
-    SocketSend clientSock, reply;
+    SocketSend client_socket \Str:=reply;
     TPWrite "Sent to server: " + reply;
 
+    ! 2. Receive greeting
+    SocketReceive client_socket \Str:=received_message;
+    TPWrite "Received from server: " + received_message;
+
     ! 4. Clean up
-    SocketClose clientSock;
+    SocketClose client_socket;
     TPWrite "Connection closed.";
   ENDPROC
 ENDMODULE
