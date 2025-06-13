@@ -99,5 +99,3 @@ my_variable = to_num(value)
 
 ---
 
-Created for WSU Tech – ROB-XXX Industrial Robotics Network Lab  
-Instructor: [Your Name]
