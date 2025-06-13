@@ -3,7 +3,7 @@
 
 These Python scripts demonstrate basic **TCP socket communication** between a client and a server. They are designed to be easy to understand for students who are learning how two devices (like a robot and a Jetson or PC) can talk to each other over a network.
 
-## 🔧 What You Get
+## What You Get
 
 - `python_server.py`: A simple TCP server that listens for a client.
 - `python_client.py`: A simple TCP client that connects to a server.
@@ -14,7 +14,7 @@ Each script uses:
 - Port: `1025`
 - ASCII string messages (no special characters, no newline endings)
 
-## 💬 Protocol Overview
+## Protocol Overview
 
 1. The **server** waits for a connection.
 2. The **client** connects to the server.
@@ -25,7 +25,7 @@ All messages are plain ASCII, and both sides close the connection after one exch
 
 ---
 
-## 🖥️ python_server.py
+## python_server.py
 
 ```python
 import socket
@@ -49,14 +49,14 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server:
             print(f"[Server] Received: {data.decode().strip()}")
 ```
 
-### 📘 Notes:
+### Notes:
 - `HOST = ''` means it listens on all network interfaces.
 - `SO_REUSEADDR` allows quick restart of the server.
 - The server waits for one connection and then exits after exchanging messages.
 
 ---
 
-## 🧑‍💻 python_client.py
+## python_client.py
 
 ```python
 import socket
@@ -74,14 +74,14 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as client:
     print("[Client] Sent: '42'")
 ```
 
-### 📘 Notes:
+### Notes:
 - Replace `"ip.of.the.server"` with the actual IP address of the server.
 - The client connects to the server and waits for a message.
 - It then replies with `"42"` and exits.
 
 ---
 
-## ✅ Compatibility
+## Compatibility
 
 These scripts are compatible with:
 - Python 3.6+
@@ -89,7 +89,7 @@ These scripts are compatible with:
 
 ---
 
-## 🧪 Testing Instructions
+## Testing Instructions
 
 1. Open a terminal and run `python_server.py`.
 2. On another machine (or terminal), update `HOST` in `python_client.py` and run it.
@@ -99,7 +99,7 @@ These scripts are compatible with:
 
 ---
 
-## 🔁 Swap Roles
+## Swap Roles
 
 You can also pair:
 - **RAPID client** with `python_server.py`

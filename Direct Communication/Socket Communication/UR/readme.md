@@ -5,7 +5,7 @@ This README provides simple and compatible **URScript TCP socket examples** for 
 
 ---
 
-## 🔧 What You Get
+## What You Get
 
 - `ur_client.script` – A UR robot client that connects to a server
 - `ur_server.script` – A UR robot server that accepts a client connection
@@ -17,7 +17,7 @@ These scripts demonstrate:
 
 ---
 
-## 🔁 Communication Protocol
+## Communication Protocol
 
 | Role    | Sends            | Receives        |
 |---------|------------------|-----------------|
@@ -30,7 +30,7 @@ These scripts demonstrate:
 
 ---
 
-## 🤖 ur_client.script
+## ur_client.script
 
 ```urscript
 def ur_client():
@@ -57,7 +57,7 @@ ur_client()
 
 ---
 
-## 🖥️ ur_server.script
+## ur_server.script
 
 ```urscript
 def ur_server():
@@ -87,7 +87,7 @@ ur_server()
 
 ---
 
-## ✅ Compatibility
+## Compatibility
 
 UR scripts work with:
 - Python client/server scripts
@@ -96,7 +96,7 @@ UR scripts work with:
 
 ---
 
-## 🧪 How to Use on a UR Robot
+## How to Use on a UR Robot
 
 1. Upload script to your UR controller or paste into the Polyscope Script Editor.
 2. Replace IP with real server/client address.
@@ -105,7 +105,7 @@ UR scripts work with:
 
 ---
 
-## 💡 Tips
+## Tips
 
 - Only one client can connect at a time.
 - Use `sleep(0.5)` to ensure sockets initialize before sending/receiving.
@@ -113,6 +113,6 @@ UR scripts work with:
 
 ---
 
-## 📎 Summary
+## Summary
 
 These URScript examples are fully compatible with the earlier Python and RAPID examples and follow best practices for clarity and reliability.
