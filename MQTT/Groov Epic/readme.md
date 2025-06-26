@@ -12,7 +12,7 @@ You can use either Wi-Fi or Ethernet, depending on your setup.
 
 ### Step 2: Find the IP Address
 Once connected, identify the IP address of your groov EPIC.
-In this example, the IP address is: 192.168.20.49
+In this example, the IP address is: ip.of.the.plc
 
 <div align="center">
   <img src="IMAGES/1.jpg" width="720" height="1279">
@@ -24,7 +24,7 @@ In this example, the IP address is: 192.168.20.49
 
 This address allows you to access the device from your computer.
 Open a web browser and enter the IP address:
-http://192.168.20.49
+http://ip.of.the.plc
 
 You will be directed to the login page of the groov EPIC interface.
 
@@ -39,11 +39,11 @@ Use the following credentials to log in:
   <table>
     <tr>
       <th>Username</th>
-      <th>student</th>
+      <th>########</th>
     </tr>
     <tr>
       <td>Password</td>
-      <td>changeme</td>
+      <td>########</td>
     </tr>
   </table>
 </div>
