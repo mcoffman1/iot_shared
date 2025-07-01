@@ -78,7 +78,7 @@ This guide walks you through enabling and testing OPC UA communication on a Siem
 
 ---
 
-## Coming Soon
+## Video Guides
 
 - You can also check out the video [Setting up the OPC UA Server Interface on S7-1200 PLC using TIA Portal and Testing with UA Expert](https://www.youtube.com/watch?v=-ComCFIRMJg)
 - Or for the 1500 look at [Setting up the OPC UA Server on S7-1500 PLC using TIA Portal and Basic Diagnostics with UA Expert](https://www.youtube.com/watch?v=o-mXEqElVXY)
