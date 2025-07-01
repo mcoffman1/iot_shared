@@ -57,7 +57,7 @@ python3 opcua_client.py
 1. [Download UaExpert](https://www.unified-automation.com/products/development-tools/uaexpert.html) and install it on a PC.
 2. Launch UaExpert.
 3. Create a new server connection:
-   - URL: `opc.tcp://<JetsonA_IP>:4840/freeopcua/server/`
+   - URL: `opc.tcp://ip.of.the.server:4840/freeopcua/server/`
 4. Browse the address space to verify the `MyDevice` object and its `Temperature` variable.
 
 ---
