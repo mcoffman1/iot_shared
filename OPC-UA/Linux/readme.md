@@ -70,7 +70,3 @@ python3 opcua_client.py
 - Restart the server after editing the endpoint or variable names.
 
 ---
-
-## Coming Soon
-
-A full lab handout with screenshots and interactive exercises for OPC UA with Python, Jetson, and industrial robots.
