@@ -39,11 +39,11 @@ Use the following credentials to log in:
   <table>
     <tr>
       <th>Username</th>
-      <th>########</th>
+      <th>EXAMPLE USERNAME</th>
     </tr>
     <tr>
       <td>Password</td>
-      <td>########</td>
+      <td>EXAMPLE PASSWORD</td>
     </tr>
   </table>
 </div>
