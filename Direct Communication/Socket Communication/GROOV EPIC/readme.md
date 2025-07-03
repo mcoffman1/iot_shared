@@ -12,7 +12,7 @@ Start by connecting your groov EPIC device to your local network. You can use ei
 
 ### **Step 2: Find the IP Address**
 
-Once connected, identify the IP address of your groov EPIC. In this example, the IP address is: 192.168.20.49
+Once connected, identify the IP address of your groov EPIC. In this example, the IP address is: IP.ADDRESS
 
 <div align="center">
   <img src="IMAGES/image2.jpeg" width="720" height="1279">
@@ -22,7 +22,7 @@ Once connected, identify the IP address of your groov EPIC. In this example, the
   <img src="IMAGES/image3.jpeg" width="720" height="1279">
 </div>
 
-This address allows you to access the device from your computer. Open a web browser and enter the IP address: [http://192.168.20.49](http://192.168.20.49/)
+This address allows you to access the device from your computer. Open a web browser and enter the IP address: [http://IP.ADDRESS](http://IP.ADDRESS/)
 
 You will be directed to the login page of the groov EPIC interface.
 
@@ -34,9 +34,9 @@ You will be directed to the login page of the groov EPIC interface.
 
 Use the following credentials to log in:
 
-| Username | student |
+| Username | USERNAME |
 | --- | --- |
-| Password | changeme |
+| Password | PASSWORD |
 
 <div align="center">
   <img src="IMAGES/image5.png" >
