@@ -19,7 +19,7 @@ In this example, the IP address is: ip.of.the.plc
 </div>
 
 <div align="center">
-  <img src="IMAGES/2.jpg" width="720" height="1279">
+  <img src="IMAGES/2.jpeg" width="720" height="1279">
 </div>
 
 This address allows you to access the device from your computer.
